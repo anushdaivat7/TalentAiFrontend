@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "/api" });
+// const api = axios.create({ baseURL: "/api" });
+const api = axios.create({
+  baseURL: "http://talentai-env.eba-jihywugp.us-east-1.elasticbeanstalk.com/api",
+});
 
 export const getHealth = () => api.get("/health").then((r) => r.data);
 export const getSummary = () => api.get("/dashboard/summary").then((r) => r.data);
