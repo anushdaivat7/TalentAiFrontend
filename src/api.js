@@ -2,7 +2,7 @@ import axios from "axios";
 
 // const api = axios.create({ baseURL: "/api" });
 const api = axios.create({
-  baseURL: "http://talentai-env.eba-jihywugp.us-east-1.elasticbeanstalk.com/api",
+  baseURL: "https://d2zt43phpp4rd1.cloudfront.net/api",
 });
 
 export const getHealth = () => api.get("/health").then((r) => r.data);
